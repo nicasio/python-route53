@@ -13,7 +13,7 @@ class ResourceRecordSet(object):
     # Override this in your sub-class.
     rrset_type = None
 
-    def __init__(self, connection, zone_id, name, ttl, records, weight=None,
+    def __init__(self, connection, zone_id, name, records, ttl=None, weight=None,
                  region=None, set_identifier=None):
         """
         :param Route53Connection connection: The connection instance that
